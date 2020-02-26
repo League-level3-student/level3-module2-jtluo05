@@ -66,7 +66,7 @@ public class MergeSorter extends Sorter {
 				// 15. increase j by 1
 
 				// 16. increase k by 1
-
+			}
 				// 17. make a while loop that runs while i is less than or equal to middle
 				while (i <= middle) {
 					array[k] = z[i];
@@ -78,7 +78,7 @@ public class MergeSorter extends Sorter {
 
 				// 19. increase k and i by 1
 				display.updateDisplay();
-			}
+			
 
 		}
 	}
