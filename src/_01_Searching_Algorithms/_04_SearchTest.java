@@ -25,12 +25,13 @@ class _04_SearchTest {
 	public void testInterpolationSearch() {
 		//3. use the assertEquals method to test your interpolation search method.
 		//   remember that the array must be sorted and evenly distributed
-		assertEquals(5,_02_InterpolationSearch.interpolationSearch(arr,5));
+	//	assertEquals(5,_02_InterpolationSearch.interpolationSearch(arr,5));
 	}
 	
 	@Test
 	public void testExponentialSearch() {
 		//4. use the assertEquals method to test your exponential search method.
 		//   remember that the array must be sorted
+		assertEquals(5,_03_ExponentialSearch.exponentialSearch(arr,5));
 	}
 }
