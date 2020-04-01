@@ -26,14 +26,32 @@ public class _00_MoreAndMoreTests {
 		return true;
 	}
 boolean isSquare(int num) {
-
+if (num==1) {
+	return true;
+}
+else {
 	for (int i = num-1; i > 0; i--) {
 		if (i*i==num) {
 			return true;
 		}
 	}
 	return false;
+}
+	
+}
 
+boolean isCube(int num) {
+	if (num==1) {
+		return true;
+	}
+	else {
+		for (int i = num-1; i > 0; i--) {
+			if (i*i*i==num) {
+				return true;
+			}
+		}
+		return false;
+	}
 }
 	@Test
 	public void MultTest() {
@@ -72,13 +90,13 @@ boolean isSquare(int num) {
 	@Test
 	public void CubeTest() {
 
-//		assertTrue(isCube(27));
-//		assertTrue(isCube(216));
-//		assertTrue(isCube(729));
-//		assertTrue(isCube(1));
-//		assertFalse(isCube(3));
-//		assertFalse(isCube(22));
-//		assertFalse(isCube(143));
+		assertTrue(isCube(27));
+		assertTrue(isCube(216));
+		assertTrue(isCube(729));
+		assertTrue(isCube(1));
+		assertFalse(isCube(3));
+		assertFalse(isCube(22));
+		assertFalse(isCube(143));
 	}
 
 }
