@@ -59,19 +59,73 @@ public class Algorithms {
 	}
 
 	public static List<Double> sortScores(List<Double> results) {
-int i = 0;
+		int i = 0;
 		for (int j = 0; j < results.size(); j++) {
-			for ( i = 0; i < results.size() - 1; i++) {
+			for (i = 0; i < results.size() - 1; i++) {
 				if (results.get(i) > results.get(i + 1)) {
 					double x = results.get(i);
-					results.set(i,results.get(i+1));
+					results.set(i, results.get(i + 1));
 					results.set(i + 1, x);
 				}
 
 			}
-			
+
 		}
-return results;
+		return results;
 	}
 
+	public static List<String> sortDNA(List<String> us) {
+
+		for (int j = 0; j < us.size(); j++) {
+			for (int i = 0; i < us.size() - 1; i++) {
+				if (us.get(i).length() > us.get(i + 1).length()) {
+					String x = us.get(i);
+					us.set(i, us.get(i + 1));
+					us.set(i + 1, x);
+				}
+			}
+		}
+		return us;
+	}
+
+	
+	public static List<String> sortWords(List<String> words) {
+		for (int j = 0; j < words.size(); j++) {
+		for (int i = 0; i < words.size()-1; i++) {
+			if (words.get(i).compareTo(words.get(i+1))>0) {
+				String x=words.get(i);
+				words.set(i, words.get(i+1));
+				words.set(i+1, x);
+			}
+			else {
+				
+			}
+		}
+		}
+		return words;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
